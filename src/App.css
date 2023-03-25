@@ -18,7 +18,7 @@
 }
 .header{
     background: linear-gradient( 0deg, #11181F, #1D262F );
-    height: 500px;
+    height: 600px;
     position: relative;
 }
 .epuvUc {
@@ -119,6 +119,36 @@ body{
     background: linear-gradient(90deg, #90a8a85f, #1D262F);
 }
 
+.icon7{
+    position: absolute;
+    left: 27%;
+    font-size: 45px;
+    top: 1%;
+    height: 29px;
+    width: 60px;
+    animation: mover 1s infinite alternate;
+    transition: .3 ease all;
+    color: #aadcdc;
+}
+/*.icon6{
+    position: absolute;
+    left: 7%;
+    font-size: 45px;
+    top: -3%;
+    height: 29px;
+    width: 60px;
+    animation: mover 1s infinite alternate;
+    transition: .3 ease all;
+    color: #aadcdc;
+}
+@keyframes mover {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+} */
 
 /* start   services */
 
@@ -126,6 +156,6 @@ body{
         height: 700px;
         width: 100%;
         background-color: #AADCDC;
-        
+
     }
 /* end   services */

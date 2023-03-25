@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import logo2 from "../images/logo2.png"
+import icon7 from "../images/download (7).png"
 export default function Header() {
   return (
     <header className='header'>
@@ -33,6 +34,12 @@ export default function Header() {
             </path>
           </svg>
         </div>
+        {/* <img className='icon7' src={icon7} alt="" /> */}
+
+        {/* <span className='icon6'> &lt; </span>
+        <span className='icon7'> /&gt; </span> */}
+        {/* {/* <img src={icon7} alt="" /> */}
+        {/* <img className='icon7' src={icon7} alt="" /> */}
     </header>
   )
 }
