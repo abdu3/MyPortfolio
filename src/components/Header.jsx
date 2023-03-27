@@ -1,13 +1,14 @@
 import React from 'react'
 import Nav from './Nav'
-import logo2 from "../images/logo2.png"
-import icon7 from "../images/download (7).png"
+import logo2 from "../images/myPic.png"
+import SocialMedia from './SocialMedia'
 export default function Header() {
   return (
     <header className='header'>
-        <Nav/>
-        <div className='container'>
-          <div className="row mt-5">
+        <div className='container-md'>
+        {/* <Nav/> */}
+        <SocialMedia/>
+          <div className="row mt-5 align-items-center">
               <div className="col-md-6 text-start">
                 <h6 >Hi , my name is </h6>
                 <h2 className='name-title'>Abdurazaq Al-Hmri</h2>
@@ -21,16 +22,16 @@ export default function Header() {
                   resume
                 </button>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 d-flex justify-content-center">
                 <div className="logo-box">
-                  <img src={logo2} alt=""/>
+                  <img className='my-image' src={logo2} alt=""/>
                 </div>
               </div>
           </div>
         </div>
         <div class="epuvUc">
           <svg preserveAspectRatio="none" width="1440" height="74" viewBox="0 0 1440 74" class="sc-c8cfb853-4 exNWwu">
-            <path fill='#AADCDC' d="M456.464 0.0433865C277.158 -1.70575 0 50.0141 0 50.0141V74H1440V50.0141C1440 50.0141 1320.4 31.1925 1243.09 27.0276C1099.33 19.2816 1019.08 53.1981 875.138 50.0141C710.527 46.3727 621.108 1.64949 456.464 0.0433865Z">
+            <path fill='#FFDCBA' d="M456.464 0.0433865C277.158 -1.70575 0 50.0141 0 50.0141V74H1440V50.0141C1440 50.0141 1320.4 31.1925 1243.09 27.0276C1099.33 19.2816 1019.08 53.1981 875.138 50.0141C710.527 46.3727 621.108 1.64949 456.464 0.0433865Z">
             </path>
           </svg>
         </div>
