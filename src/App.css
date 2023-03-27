@@ -164,6 +164,7 @@ h6{
 }
 
 body{
+    font-family: 'Almarai, sans-serif';
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
 
@@ -316,19 +317,58 @@ body{
 
 /* start skills section */
 .skills{
-    height: 400px;
-    /* width: 100%; */
+    background-color: #1D262F;
     position: relative;
 }
 .skills .title-skills{
     width: 170px;
     height: 60px;
     display: inline-block;
-    background-image: url("./images/B_bg_gray.png");
+    background-image: url("./images/B_bg_red.png");
     background-repeat: no-repeat;
 }
 .title-skills .title{
     color: #FFDCBA;
 }
-
+.skill-card{
+    width: 170px;
+    height: 65px;
+    padding: 20px;
+    background-color: #FFDCBA;
+    color: #11181F;
+    margin: 6px;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out 0s;
+}
+.skill-card:hover{
+color: #fff;
+}
+.skill-card.html:hover{
+    background-color: rgb(233 98 40);
+}
+.skill-card.css:hover{
+    background-color: rgb(40 98 233);
+}
+.skill-card.javascript:hover{
+    background-color: rgb(234 212 28);
+}
+.skill-card.react:hover{
+    background-color: rgb(94 211 243);
+}
+.skill-card.git:hover{
+    background-color: #F64D27;
+}
+.skill-card.bootstrap:hover{
+    background-color:#7952B3;
+}
+.skill-card.node:hover{
+    background-color:#52A044;
+}
+.skill-card.laravel:hover{
+    background-color:#F23C2F;
+}
+.skill-card.php:hover{
+    background-color:#7A86B8;
+}
 /* end skills section */
