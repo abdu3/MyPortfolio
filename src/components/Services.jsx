@@ -15,7 +15,9 @@ export default function Services() {
           <div class="card  text-white service-card one"> 
             {/* <img src={card_img} class="card-img " alt="..." style={{width:'350px', height:'150px'}}/> */}
               <div class="card-img">
+                <div className="card-title-box">
                 <h5 class="card-title">Back End Development</h5>
+                </div>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
@@ -25,7 +27,9 @@ export default function Services() {
             <div class="card  text-white service-card two">
             {/* <img src="..." class="card-img" alt="..."> */}
               <div class="">
-                <h5 class="card-title">Front End Development</h5>
+                <div className="card-title-box">
+                   <h5 class="card-title">Front End Development</h5>
+                </div>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
@@ -35,7 +39,9 @@ export default function Services() {
             <div class="card  text-white service-card three">
             {/* <img src="..." class="card-img" alt="..."> */}
               <div class="">
-                <h5 class="card-title">UI/UX Design</h5>
+                <div className="card-title-box">
+                  <h5 class="card-title">UI/UX Design</h5>
+                </div>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
