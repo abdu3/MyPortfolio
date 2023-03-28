@@ -14,7 +14,7 @@ export default function Services() {
           <div className="col-md-4 ">
           <div class="card  text-white service-card one"> 
             {/* <img src={card_img} class="card-img " alt="..." style={{width:'350px', height:'150px'}}/> */}
-              <div class="card-img">
+              <div class="card-service-content">
                 <div className="card-title-box">
                 <h5 class="card-title">Back End Development</h5>
                 </div>
@@ -26,7 +26,7 @@ export default function Services() {
           <div className="col-md-4 ">
             <div class="card  text-white service-card two">
             {/* <img src="..." class="card-img" alt="..."> */}
-              <div class="">
+              <div class="card-service-content">
                 <div className="card-title-box">
                    <h5 class="card-title">Front End Development</h5>
                 </div>
@@ -38,7 +38,7 @@ export default function Services() {
           <div className="col-md-4 ">
             <div class="card  text-white service-card three">
             {/* <img src="..." class="card-img" alt="..."> */}
-              <div class="">
+              <div class="card-service-content">
                 <div className="card-title-box">
                   <h5 class="card-title">UI/UX Design</h5>
                 </div>

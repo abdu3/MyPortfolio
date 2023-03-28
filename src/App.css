@@ -4,10 +4,7 @@
     margin: 0;
 }
 
-.app{
-    background-color: #1D262F;
-    position: relative;
-}
+
 
 /*  dark and light mood */
 
@@ -58,12 +55,11 @@
   }
 /*  dark and light mood */
 .navbar {
-    /* background-color: #e3d8d8; */
-    padding: 0;
-    height: 70px;
+    background: linear-gradient( 90deg, #11181F, #1D262F );
+    /* height: 70px; */
 }
 .nav-container{
-    background-color: #1D262F;
+    background: linear-gradient( 90deg, #11181F, #1D262F );
     z-index: 5;
 }
 .logo-image{
@@ -80,9 +76,8 @@
  font-weight: bold;
 }
 .header{
-    background: linear-gradient( 0deg, #11181F, #1D262F );
-    /* height: 600px; */
-    /* position: relative; */
+    background: linear-gradient( 90deg, #11181F, #1D262F );
+    padding-top: 70px;
 }
 .epuvUc {
     /* overflow: hidden;
@@ -247,31 +242,24 @@ body{
     .services .service-card{
         /* border:3px  dashed #8391AC; */
         background-color: #fff;
+        border-radius: 15px;
         padding: 47px;
         box-shadow: 10px 10px 15px #8391AC;
         margin-bottom: 15px;
         color: #1D262F !important;
         font-weight: bold;
+        transition: all 0.4s ease-in-out 0.2s;
+        
     }
-    /* .services .service-card::after{
-        content: "";
-        position: absolute;
-        left: 100%;
-        height: 4px;
-        width: 40px;
-        background-color: #8391AC;
+    .services .service-card:hover .card-service-content{
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(-0.75rem) ;
+
     }
-    .services .service-card.one::before{
-        content: "";
-        position: absolute;
-        right: 100%;
-        height: 4px;
-        width: 40px;
-        background-color: #8391AC;
-    } */
+
     .card-title-box{
-        /* width: 270px; */
-        /* height:30px; */
         display: inline-block;
         background-image: url("./images/logoColor.png");
         background-repeat: no-repeat;
@@ -286,10 +274,13 @@ body{
 /* start social  */
 
 .social{
-    background-image: url("./images/download\ \(7\).png");
+    /* background-image: url("./images/B_V_bg_red.png");
+    background-repeat: no-repeat; */
     /* box-shadow: -5px 5px 5px #8391AC; */
+    background-color: #464348;
+    border-radius: 7px;
     position: fixed;
-    right: 6px;
+    right: -1px;
     top: 30%;
     z-index: 4;
 }
@@ -310,7 +301,7 @@ body{
     left: 0px;
     opacity: 0.1;
     transition: all 0.3s ease-in-out 0s;
-    background: linear-gradient(90deg, #282d5f26, #242b61c0);
+    background: linear-gradient(90deg, #282d5f26, #FFDCBA);
 }
 /* end   social */
 
@@ -371,4 +362,32 @@ color: #fff;
 .skill-card.php:hover{
     background-color:#7A86B8;
 }
+.epuvUc.skills {
+    transform: translateY(48px);
+}
 /* end skills section */
+
+/*  start project */
+    .project{
+        background-color: #fff;
+        position: relative;
+    }
+    .project .title-project{
+        width: 170px;
+        height: 60px;
+        display: inline-block;
+        background-image: url("./images/B_bg_blue.png");
+        background-repeat: no-repeat;
+    }
+    .title-project .title{
+        color: #FFDCBA;
+    }
+    .project .project-image{
+        height:350px ;
+        background-color: #FFDCBA;
+    }
+    .project .project-info{
+        height:350px ;
+        background-color: #1D262F;
+    }
+/*  end project */
