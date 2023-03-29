@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import ContactMe from '../components/ContactMe'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Project from '../components/Project'
@@ -13,6 +14,7 @@ export default function Home() {
         <Services/>
         <Skills/>
         <Project/>
+        <ContactMe/>
     </Fragment>
   )
 }
