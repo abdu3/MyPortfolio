@@ -167,9 +167,8 @@ body{
 
 .nav-link:hover:before,
 .btn-resume:hover:before,
-.social a:hover::before
- {
-    height: 100%;
+.social a:hover::before {
+    height: 6%;
     width: 100%;
     opacity: 1;
 }
@@ -178,14 +177,15 @@ body{
     z-index: 1;
     content: "";
     position: absolute;
-    height: 0%;
-    width: 100%;
-    bottom: -1px;
+    height: 100%;
+    width: 0%;
+    bottom:-1px;
     left: 0px;
     opacity: 1;
     transition: all 0.3s ease 0s;
     background: linear-gradient(90deg, #90a8a85f, #FFDCBA);
 }
+
 .btn-resume::before{
     z-index: 1;
     content: "";
@@ -324,7 +324,7 @@ body{
 .skill-card{
     width: 170px;
     height: 65px;
-    padding: 20px;
+    padding: 20px 5px;
     background-color: #FFDCBA;
     color: #11181F;
     /* box-shadow: 2px 2px 15px #ec1414; */
@@ -438,7 +438,61 @@ body{
 
 /*   end contact me */
 .contactMe{
-    height: 400px;
+    /* height: 400px; */
     background-color: #1D262F;
+}
+.contactMe .title-contactMe{
+    width: 180px;
+    height: 60px;
+    display: inline-block;
+    background-image: url("./images/B_bg_green.png");
+    background-repeat: no-repeat;
+}
+.title-contactMe .title{
+    color: #FFDCBA;
+}
+.form-box form input{
+    /* padding: 10px 6px; */
+}
+.form-box{
+    background-color: #11181F;
+    padding: 1.5rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #16212C;
+}
+form input,
+form textarea{
+    background-color: #16212C !important;
+    color: #464348 !important;
+    font-family:monospace;
+    font-weight: 500 !important;
+    padding: 0.5rem !important;
+    border-radius: 0.75rem !important;
+    border: 1px solid #FFDCBA !important;
+    
+}
+form input:focus,
+form textarea:focus{
+    border: 2px solid #FFDCBA !important;
+
+}
+form label{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700 ;
+    color: #FFDCBA;
+    text-align: start !important;
+}
+form .btn{
+    background-color: #FFDCBA;
+    font-weight: 900 !important;
+    border-radius: 0.75rem !important;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #16212C;
+}
+form .btn:hover{
+    background-color: #d3b89d;
+
 }
 /*   start contact me */

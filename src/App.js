@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './pages/Home';
 function App() {
-  {console.log(document.readyState ==="loading")}
+  {console.log(document.readyState ==="complete")}
 
   return (
     <div className='app'>
