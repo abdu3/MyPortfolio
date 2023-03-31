@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ContactMe() {
+export default function ContactMe(props) {
     const [formData,setFormData] =React.useState({
             fullName: "",
             email: "",
@@ -22,13 +22,13 @@ export default function ContactMe() {
     }
 
   return (
-    <section className="contactMe text-center pb-5 pt-5">
+    <section className={`contactMe text-center pb-5 pt-5 ${props.light?"light":""}`}>
         <div className="container">
             <div className='title-contactMe mt-5'>
                 <h2 className='title'>Contact</h2>
             </div>
             <div className="row justify-content-center py-5 text-start">
-                <div className="col-md-6 form-box">
+                <div className="col-md-6 col-10 form-box">
                 <form onSubmit={handleSubmit} className="row g-3">
                 <div className="mb-1">
                     <label for="fullName" class="form-label">Full Name</label>

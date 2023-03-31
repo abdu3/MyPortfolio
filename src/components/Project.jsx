@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Project() {
+export default function Project( props) {
   return (
     
-    <section className="project pt-5 pb-5 text-center">
+    <section className={`project pt-5 pb-5 text-center ${props.light?"light":""}`}>
         <div className="container">
             <div className='title-project'>
                 <h2 className='title'>Project</h2>
