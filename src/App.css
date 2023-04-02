@@ -68,7 +68,7 @@ body{
 }
 .navbar.light{
     /* background: linear-gradient( 160deg, #c2bbaaa0,#7f8796 ); */
-    background: linear-gradient( 90deg, #a59f9080, #ffffff );
+    background: linear-gradient( 90deg, #a59f9080, #8391ac );
 }
 .nav-container{
     /* background: transparent; */
@@ -126,7 +126,7 @@ body{
   }
 .header.light{
     /* background: linear-gradient( 160deg, #c2bbaaa0, #7f8796 ); */
-    background: linear-gradient( 90deg, #a59f9080, #ffffff );
+    background: linear-gradient( 90deg, #a59f9080, #8391ac );
 }
 .svg-Wave-box {
     overflow: hidden;
@@ -169,8 +169,11 @@ body{
 .title{
    color:  #8391AC;
 }
-.brief{
-    color:  #8391AC;
+.header.light .title{
+    color: #c4873e;
+}
+.header.light .brief{
+    color:  #cd9556;
 }
 .btn-resume{
     color: #FFDCBA !important;
