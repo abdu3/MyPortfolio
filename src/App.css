@@ -67,18 +67,22 @@ body{
     background: linear-gradient( 90deg, #11181F, #1D262F );
 }
 .navbar.light{
-    background: linear-gradient( 90deg, #c2bbaaa0, #d3b89d );
+    /* background: linear-gradient( 160deg, #c2bbaaa0,#7f8796 ); */
+    background: linear-gradient( 90deg, #a59f9080, #ffffff );
 }
 .nav-container{
-    background: transparent;
-    z-index: 5;
+    /* background: transparent; */
+    /* z-index: 5; */
 }
 .logo-image{
-    max-width: 187px;
+    max-width: 190px;
+    height: 80px;
+}
+.navbar-nav {
+    align-items:baseline;
 }
 .nav-link{
     position: relative;
-    z-index: 2;
     color: #FFDCBA !important;
     font-size: 1rem !important;
     font-weight: 600;
@@ -96,9 +100,33 @@ body{
 .header{
     background: linear-gradient( 90deg, #11181F, #1D262F );
     padding-top: 70px;
+    position: relative;
 }
+@media screen and (max-width: 592px) {
+    .header {
+        padding-top: 40px;
+        padding-bottom: 50px;
+
+    }
+    .header .row{
+        flex-direction: column-reverse;
+    }
+    .my-image-box{
+        width: 300px;
+    }
+    .toggler{
+        margin-left: 150px;
+    }
+    .service-svg-box {
+        transform: translateY(49px) !important;
+    }
+    .svg-Wave-box {
+        transform: translateY(50px) !important;
+    }
+  }
 .header.light{
-    background: linear-gradient( 90deg, #c2bbaaa0, #d3b89d );
+    /* background: linear-gradient( 160deg, #c2bbaaa0, #7f8796 ); */
+    background: linear-gradient( 90deg, #a59f9080, #ffffff );
 }
 .svg-Wave-box {
     overflow: hidden;
@@ -108,7 +136,7 @@ body{
     bottom: 0px;
     width: 100%;
     height: 100px;
-    transform: translateY(-1px);
+    transform: translateY(0px);
     margin-bottom: -1px;
 }
 .svg-Wave {
@@ -125,7 +153,7 @@ body{
     fill: #fff;
 }
 
-h6{
+.header h6{
     color: #FFDCBA;
     font-weight: 600;
 }
@@ -163,8 +191,7 @@ h6{
 }
 
 .my-image-box{
-    width: 400px;
-    height: 400px;
+    height: auto
 }
 .my-image{
     width: 100%;
@@ -232,7 +259,7 @@ h6{
         width: 170px;
         height: 60px;
         display: inline-block;
-        background-image: url("./images/B_bg_gray.png");
+        background-image: url("./images/headBgDark.png");
         background-repeat: no-repeat;
     }
     .services .title-service .title{
@@ -328,11 +355,11 @@ h6{
     width: 170px;
     height: 60px;
     display: inline-block;
-    background-image: url("./images/B_bg_red.png");
+    background-image: url("./images/headBgLight.png");
     background-repeat: no-repeat;
 }
 .title-skills .title{
-    color: #FFDCBA;
+    color: #1D262F;
 }
 .skill-card{
     width: 170px;
@@ -401,6 +428,18 @@ h6{
         /* background: linear-gradient(-90deg, #0000004e, #7A86B8); */
 
 }
+.skill-card.firebase:hover{
+    /* background: repeating-linear-gradient( #FFCA28, #F38765,#FFA000); */
+        background-color: #FFA000;
+}
+.skill-card.mysql:hover{
+    background-color:#117E96;
+
+}
+.skill-card.mongodb:hover{
+    background-color:#116149;
+
+}
 .skills-svg {
     position: absolute;
     left: -3%;
@@ -430,7 +469,7 @@ h6{
         width: 170px;
         height: 60px;
         display: inline-block;
-        background-image: url("./images/B_bg_blue.png");
+        background-image: url("./images/headBgDark.png");
         background-repeat: no-repeat;
     }
     .title-project .title{
@@ -463,11 +502,11 @@ h6{
     width: 180px;
     height: 60px;
     display: inline-block;
-    background-image: url("./images/B_bg_green.png");
+    background-image: url("./images/headBgLight.png");
     background-repeat: no-repeat;
 }
 .title-contactMe .title{
-    color: #FFDCBA;
+    color: #16212C;
 }
 .form-box form input{
     /* padding: 10px 6px; */

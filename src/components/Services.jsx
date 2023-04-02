@@ -1,5 +1,5 @@
 import React from 'react'
-import card_img from "../images/download (6).png"
+// import card_img from "../images/download (6).png"
 export default function Services(props) {
   return (
    <section className={`services pt-5 pb-5 text-center ${props.light?"light":""}`}>
@@ -13,7 +13,6 @@ export default function Services(props) {
         <div className="row mt-5">
           <div className="col-md-4 ">
           <div class="card  text-white service-card one"> 
-            {/* <img src={card_img} class="card-img " alt="..." style={{width:'350px', height:'150px'}}/> */}
               <div class="card-service-content">
                 <div className="card-title-box">
                 <h5 class="card-title">Back End Development</h5>

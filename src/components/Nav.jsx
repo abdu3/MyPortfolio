@@ -1,11 +1,18 @@
 import React from 'react'
-import logo from "../images/logo55.png"
+import logo from "../images/logo222.png"
+import lightLogo from "../images/lightLogo222.png"
+
 export default function Nav(props) {
   return (
         <nav className={`navbar navbar-dark navbar-expand-lg ${props.light?"light":""}`}>
           <div className={`container-lg nav-container`}>
             <a className="navbar-brand" href="#">
-              <img className='logo-image' src={logo} alt="logo" />
+              {
+                props.light?
+                <img className='logo-image' src={lightLogo} alt="logo" />:
+                <img className='logo-image' src={logo} alt="logo" />
+
+              }
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>

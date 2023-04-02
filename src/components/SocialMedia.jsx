@@ -1,5 +1,4 @@
 import React from 'react'
-import s_img from "../images/B_V_bg_red.png"
 export default function SocialMedia() {
   return (
     <section className='social'>

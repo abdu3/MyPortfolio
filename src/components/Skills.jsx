@@ -21,6 +21,10 @@ export default function Skills(props) {
                             <div className="col-4 skill-card laravel">Laravel</div>
                             <div className="col-4 skill-card node">Node.js</div>
                             <div className="col-4 skill-card git">Git</div>
+
+                            <div className="col-4 skill-card firebase">Firebase</div>
+                            <div className="col-4 skill-card mysql">MySQL</div>
+                            <div className="col-4 skill-card mongodb">MongoDB</div>
                         </div>
                         {/* <div className="row justify-content-center m-3">
 

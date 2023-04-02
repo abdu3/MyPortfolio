@@ -1,6 +1,7 @@
 import React from 'react'
-import Nav from './Nav'
 import logo2 from "../images/myPic.png"
+import logo from "../images/logo2.png"
+import lightLogo from "../images/lightLogo2.png"
 import SocialMedia from './SocialMedia'
 export default function Header(props) {
   return (
@@ -8,13 +9,13 @@ export default function Header(props) {
         <div className='container-md'>
         {/* <Nav/> */}
         <SocialMedia/>
-          <div className="row mt-5 align-items-center">
+          <div className="row  align-items-center">
               <div className="col-md-6 text-start">
                 <h6 >Hi , my name is </h6>
-                <h2 className='name-title'>Abdurazaq Al-Hmri</h2>
+                <h2 className='name-title'>Abdurzaq Al-Hmri</h2>
                 <h2 className='title'>I build things for the web.</h2>
                 <p className='brief'>Creative and hardworking backend and frontend developer, producing high-quality, modular, and robust codes.</p>
-                <button className='btn mt-5 btn-resume ms-3' type="button" value="" >
+                <button className='btn mt-lg-5 mt-2 btn-resume ms-md-3' type="button" value="" >
                   <svg className='me-2' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down" viewBox="0 0 16 16">
                     <path d="M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5z"/>
                     <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
@@ -24,7 +25,14 @@ export default function Header(props) {
               </div>
               <div className="col-md-6 d-flex justify-content-center">
                 <div className="my-image-box">
-                  <img className='my-image' src={logo2} alt=""/>
+                  {/* <img className='my-image' src={logo2} alt=""/> */}
+                  <img className='my-image' src={logo} alt="logo" />
+                  {/* {
+                props.light?
+                <img className='my-image' src={lightLogo} alt="logo" />:
+                <img className='my-image' src={logo} alt="logo" />
+
+              } */}
                 </div>
               </div>
           </div>
