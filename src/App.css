@@ -123,6 +123,14 @@ body{
     .svg-Wave-box {
         transform: translateY(50px) !important;
     }
+    .my-image-box::before{
+        top: 43% !important;
+        left: 17% !important;
+    }
+    .my-image-box::after{
+        top: 43% !important;
+        right: 14% !important;
+    }
   }
 .header.light{
     /* background: linear-gradient( 160deg, #c2bbaaa0, #7f8796 ); */
@@ -172,6 +180,11 @@ body{
 .header.light .title{
     color: #c4873e;
 }
+.brief{
+    color:  #575d67;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
 .header.light .brief{
     color:  #cd9556;
 }
@@ -194,11 +207,45 @@ body{
 }
 
 .my-image-box{
-    height: auto
+    height: auto;
+    position: relative;
+
 }
 .my-image{
     width: 100%;
     height: auto;
+}
+.my-image-box::after {
+    content: "/>";
+    font-size: 1.3rem;
+    color: #FFDCBA;
+    position: absolute;
+    top: 59%;
+    right: 34%;
+    animation: dotAnimat 3s ease-in-out infinite;
+}
+.my-image-box::before{
+    content: "<";
+    font-size: 2.3rem;
+    font-size: 1.3rem;
+    color: #FFDCBA;
+    position: absolute;
+    top: 59%;
+    left: 34%;
+    animation: dotAnimat 2s ease-in-out infinite;
+    }
+@keyframes dotAnimat{
+    0%{
+        /* color: #000; */
+        rotate: 0deg;
+
+    }
+    100%{
+        color: #FFDCBA;
+        rotate: -360deg;
+
+
+    }
 }
 
 
