@@ -99,13 +99,11 @@ body{
 
 .header{
     background: linear-gradient( 90deg, #11181F, #1D262F );
-    padding-top: 70px;
     position: relative;
 }
 @media screen and (max-width: 592px) {
     .header {
-        padding-top: 40px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
 
     }
     .header .row{
@@ -215,7 +213,7 @@ body{
     width: 100%;
     height: auto;
 }
-.my-image-box::after {
+/* .my-image-box::after {
     content: "/>";
     font-size: 1.3rem;
     color: #FFDCBA;
@@ -236,17 +234,15 @@ body{
     }
 @keyframes dotAnimat{
     0%{
-        /* color: #000; */
         rotate: 0deg;
 
     }
     100%{
-        color: #FFDCBA;
         rotate: -360deg;
 
 
     }
-}
+} */
 
 
 .nav-link:hover:before,
